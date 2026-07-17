@@ -1,0 +1,17 @@
+name: CountdownPlugin
+version: 1.0.0
+main: lk.dev.countdown.CountdownPlugin
+api-version: 1.20
+author: 3aiya
+softdepend: [PlaceholderAPI]
+
+commands:
+  countdown:
+    description: Manage custom countdowns
+    usage: /countdown <set|add|stop|list> [id] [seconds]
+    permission: countdown.admin
+
+permissions:
+  countdown.admin:
+    description: Allows managing countdowns
+    default: op
